@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1920, height=1080">
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/vendor/gsap.min.js"></script>
     <style>
       * {
         margin: 0;
@@ -35,8 +35,17 @@
     </style>
   </head>
   <body>
-    <div data-hf-id="hf-199x" id="root" data-composition-id="main" data-start="0" data-duration="10" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-199x" id="root" data-composition-id="main" data-start="0" data-duration="16" data-width="1920" data-height="1080">
       <h1 data-hf-id="hf-v7pl" id="title" class="clip" data-start="0" data-duration="10" data-track-index="0">Title</h1>
+      <div
+        id="carousel"
+        data-composition-id="carousel-circle-1"
+        data-composition-src="compositions/carousel-circle-1.html"
+        data-start="10"
+        data-duration="6"
+        data-track-index="0"
+        data-variable-values='{"image1": "assets/carousel-images/card-01.jpg", "image2": "assets/carousel-images/card-02.jpg", "image3": "assets/carousel-images/card-03.jpg", "image4": "assets/carousel-images/card-04.jpg", "image5": "assets/carousel-images/card-05.jpg", "image6": "assets/carousel-images/card-06.jpg", "image7": "assets/carousel-images/card-07.jpg", "image8": "assets/carousel-images/card-08.jpg", "image9": "assets/carousel-images/card-09.jpg", "image10": "assets/carousel-images/card-10.jpg", "image11": "assets/carousel-images/card-11.jpg", "image12": "assets/carousel-images/card-12.jpg"}'
+      ></div>
     </div>
     <script>
       const tl = gsap.timeline({ paused: true });
